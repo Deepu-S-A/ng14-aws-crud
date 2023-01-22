@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>File upload</mat-card-title>
+    <mat-card-subtitle>Select you file</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+  <form>
+    <div>
+      <input type="file" name="image" (change)="selectImage($event)" />
+    </div>
+    <br>
+    <div>
+      <button mat-raised-button color="warn" type="button" (click)="onSubmit()">Upload</button>
+    </div>
+  </form>
+  </mat-card-content>
+</mat-card>

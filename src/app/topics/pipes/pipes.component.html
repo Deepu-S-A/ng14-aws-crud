@@ -1,0 +1,31 @@
+<div class="item-section">
+  <h2>Normal Pipe - Date</h2>
+  <h4>With out pipe Date is displayed as {{date}}</h4>
+  <h4>View 1 : After using the pipe Date is displayed as {{date | date}}</h4>
+  <h4>View 2 : After using the configurations in pipe, Date is displayed as {{date | date : 'dd/MM/yy'}}</h4>
+</div>
+<div class="item-section">
+  <h2>Custom Pipe 1 - Addition</h2>
+  <h4>This pipe performs addition</h4>
+  <mat-form-field appearance="fill">
+    <mat-label>Select currency</mat-label>
+    <mat-select [(value)]="currency">
+      <mat-option value="Rupees">Rupees</mat-option>
+      <mat-option value="Dollars">Dollars</mat-option>
+      <mat-option value="Euros">Euros</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <h4><b>2500 | addition: {{currency}}</b> is displayed as <b>{{amount | addition: currency}}</b> </h4>
+</div>
+<div class="item-section">
+  <h2>Custom Pipe 2 - Area of a circle</h2>
+  <h4>This pipe performs calculation of the area of a circle <b>A = π r²</b></h4>
+  <mat-form-field class="example-form-field">
+  <mat-label>Enter the radius of the circle</mat-label>
+  <input matInput type="text" [(ngModel)]="radius" [value]="radius" (keyup)="keytab($event)">
+  <button *ngIf="radius" matSuffix mat-icon-button aria-label="Clear" (click)="radius=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+  <h4>Area of the cirlce with Radius <b>{{radius}}</b> is :<b> {{radius | area: radius}}</b> </h4>
+</div>

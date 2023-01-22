@@ -1,0 +1,9 @@
+<header class="header-wrap">
+    <button mat-stroked-button color="warn" class="links" *ngFor="let topic of dataService.getTopicsList() | async" [routerLink]="topic.link">{{topic.name}}</button>
+    <button mat-button *ngIf="auth.isLoggedIn; else login" (click)="auth.logout()" class="login">Logout</button>
+    <ng-template #login>
+        <button mat-raised-button color="primary" routerLink="/login" class="login">Login</button>
+    </ng-template>
+</header>
+
+

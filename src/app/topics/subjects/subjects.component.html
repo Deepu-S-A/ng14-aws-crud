@@ -1,0 +1,44 @@
+<div class="d-flex">
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Component 1</mat-card-title>
+    <mat-card-subtitle>Using Behaviour subject</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{textFromBS}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="initiateBS()">Initiate</button>
+    <button mat-button>Cancel</button>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Component 2</mat-card-title>
+    <mat-card-subtitle>Using Replay subject</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{textFromRS}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="initiateRS()">Initiate</button>
+    <button mat-button>Cancel</button>
+  </mat-card-actions>
+</mat-card>
+</div>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Get Data From API</mat-card-title>
+    <mat-card-subtitle>Uses Interceptors</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p *ngFor="let key of accountInfoKeys">{{accountInfo[key]}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="initiateGetApi()">Get account info</button>
+    <button mat-button>Cancel</button>
+  </mat-card-actions>
+</mat-card>

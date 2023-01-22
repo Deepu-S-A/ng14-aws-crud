@@ -1,0 +1,12 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Autocomplete using Debounce</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field appearance="fill">
+            <mat-label>Search with the name of the car</mat-label>
+            <input matInput (change)="searchCar($event)" >
+          </mat-form-field>
+    </mat-card-content>
+  </mat-card>

@@ -1,0 +1,6 @@
+header{display: flex;justify-content: center;}
+button.login{margin-left: auto;}
+button.links{margin: 0 1rem;}
+header button:first-child {
+    margin-left: auto !important;
+}

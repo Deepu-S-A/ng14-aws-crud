@@ -1,0 +1,12 @@
+span.mdc-list-item__content {
+    cursor: pointer !important;
+    span.mdc-list-item__primary-text {
+            font-weight: bold !important;
+        }
+}
+.mdc-list-item {
+    cursor: pointer !important;
+    span {
+        font-weight: bold !important;
+    }
+}
