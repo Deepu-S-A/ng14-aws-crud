@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 /bazel-out
+/.angular
+.env
+.editorconfig
 
 # Node
 /node_modules
